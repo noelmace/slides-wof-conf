@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "wof-show"
+  },
+  "targets": {
+    "wof-conf": {
+      "hosting": {
+        "beta": [
+          "beta"
+        ]
+      }
+    }
+  }
+}

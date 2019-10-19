@@ -1,17 +1,17 @@
+ 
 {
-  "hosting": {
-    "target": "parisweb-2019",
-    "public": "dist",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites": [
+  "hosting": [
       {
-        "source": "**",
-        "destination": "/index.html"
+          "target": "devfestnantes-2019",
+          "public": "dist"
+      },
+      {
+          "target": "parisweb-2019",
+          "public": "dist"
+      },
+      {
+          "target": "beta",
+          "public": "dist"
       }
-    ]
-  }
+  ]
 }

@@ -11,6 +11,10 @@
         {
             "target": "beta",
             "public": "dist"
+        },
+        {
+            "target": "devoxxbe-2019",
+            "public": "dist"
         }
     ]
 }

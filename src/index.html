@@ -283,7 +283,8 @@
                 text-align: center;
             }
 
-            .img-row .img-container {
+            .img-row .img-container,
+            .img-row figure {
                 flex: 1 1;
             }
 
@@ -362,13 +363,32 @@
                 --background: var(--alt-color);
             }
 
+            deckgo-social .link {
+                color: #4c8dff;
+            }
+
             .fire-bg {
                 background: center no-repeat url('assets/img/flames.jpg');
                 background-size: cover;
             }
 
-            .fire-icons .img-container {
+            .fire-icons figure {
                 margin: 1em;
+            }
+
+            .fire-icons .img-row {
+                align-items: start;
+                margin-top: 1em;
+            }
+
+            .fire-icons figcaption {
+                font-size: 1.4em;
+                font-weight: bold;
+            }
+
+            .fire-icons figcaption:not(:first-of-type) {
+                margin-top: 1em;
+                font-size: 1.2em;
             }
 
             deckgo-reveal.compact {
@@ -430,6 +450,16 @@
                 font-weight: bold;
                 font-size: 3em;
             }
+
+            .quotation:before {
+                content: '«';
+                margin-right: 0.2em;
+            }
+
+            .quotation:after {
+                content: '»';
+                margin-left: 0.2em;
+            }
         </style>
         <script src="https://cdn.jsdelivr.net/gh/ireade/caniuse-embed/caniuse-embed.min.js"></script>
     </head>
@@ -439,25 +469,110 @@
                 <deckgo-deck id="slider" pager-percentage="false">
                     <!-- #region Slides -->
 
-                    <deckgo-slide-title class="dark">
+                    <deckgo-slide-content class="dark welcome-slide">
                         <h1 slot="title" style="color:red">
-                            Reading this slides?
+                            Welcome, reader!
                         </h1>
                         <div no-shadow slot="content">
                             <h3>
-                                There is a documentation for that!
+                                Here are some useful links for you before you
+                                start:
                             </h3>
-                            <p style="font-style: italic">
-                                Go read it
-                                <a
-                                    href="https://github.com/noelmace/slides-wof-conf/blob/master/src/notes.md"
-                                    >on Github</a
-                                >!
-                            </p>
+
+                            <deckgo-social
+                                github="noelmace/slides-wof-conf"
+                                class="hydrated"
+                                style="margin-left: 32px"
+                                ><ion-icon
+                                    alt="Noël on Github"
+                                    slot="icon"
+                                    name="logo-github"
+                                    margin-start
+                                    margin-end
+                                    role="img"
+                                    class="md hydrated"
+                                    aria-label="logo twitter"
+                                ></ion-icon>
+                                <span class="link">repository</span>&nbsp;for
+                                this slides (and more)</deckgo-social
+                            >
+                            <deckgo-social
+                                github="noelmace/slides-wof-conf/blob/master/src/notes.md"
+                                class="hydrated"
+                                style="margin-left: 32px"
+                                ><ion-icon
+                                    alt="Noël on Github"
+                                    slot="icon"
+                                    name="document"
+                                    margin-start
+                                    margin-end
+                                    role="img"
+                                    class="md hydrated"
+                                    aria-label="logo twitter"
+                                ></ion-icon>
+                                <span class="link">notes</span>&nbsp;(resources
+                                + some explanations)</deckgo-social
+                            >
+                            <deckgo-social
+                                twitter="hashtag/WebOnFIRE?f=live"
+                                class="hydrated"
+                                style="margin-left: 32px"
+                                ><ion-icon
+                                    alt="Noël on Twitter"
+                                    slot="icon"
+                                    name="logo-twitter"
+                                    margin-start
+                                    margin-end
+                                    role="img"
+                                    class="md hydrated"
+                                    aria-label="logo twitter"
+                                ></ion-icon>
+                                discuss on twitter&nbsp;<span class="link"
+                                    >#WebOnFIRE</span
+                                ></deckgo-social
+                            >
+                            <deckgo-social
+                                twitter="noel_mace"
+                                class="hydrated"
+                                style="margin-left: 32px"
+                                ><ion-icon
+                                    alt="Noël on Twitter"
+                                    slot="icon"
+                                    name="logo-twitter"
+                                    margin-start
+                                    margin-end
+                                    role="img"
+                                    class="md hydrated"
+                                    aria-label="logo twitter"
+                                ></ion-icon>
+                                or follow me&nbsp;<span class="link"
+                                    >@noel_mace</span
+                                ></deckgo-social
+                            >
+                            <deckgo-social
+                                full-url="https://dev.to/noelmace"
+                                class="hydrated"
+                                style="margin-left: 32px"
+                            >
+                                <ion-icon
+                                    alt="Noël on Dev.to"
+                                    slot="icon"
+                                    src="assets/icons/dev.svg"
+                                    margin-start
+                                    margin-end
+                                    role="img"
+                                    class="md hydrated"
+                                    area-label="logo Dev.to"
+                                ></ion-icon>
+                                stay tuned for my next posts on&nbsp;<span
+                                    class="link"
+                                    >dev.to</span
+                                ></deckgo-social
+                            >
                         </div>
                         <!-- prettier-ignore -->
                         <div slot="notes" show>INTRO LECTEUR</div>
-                    </deckgo-slide-title>
+                    </deckgo-slide-content>
 
                     <deckgo-slide-countdown
                         until="2019-11-04T13:30:00.000+01:00"
@@ -494,8 +609,8 @@
                                     alt="Noël on Twitter"
                                     slot="icon"
                                     name="logo-twitter"
-                                    margin-start=""
-                                    margin-end=""
+                                    margin-start
+                                    margin-end
                                     role="img"
                                     class="md hydrated"
                                     aria-label="logo twitter"
@@ -504,6 +619,59 @@
                             >
                         </div>
                     </deckgo-slide-title>
+
+                    <deckgo-slide-author
+                        img-src="https://avatars3.githubusercontent.com/u/7578400"
+                    >
+                        <h1 slot="title">Noël Macé</h1>
+                        <div slot="author">
+                            <h2>Noël Macé</h2>
+                            <p>
+                                Independent Dev Advocado 🥑 for the Web Platform
+                            </p>
+                        </div>
+                        <div slot="social-link">
+                            <deckgo-social twitter="noel_mace"
+                                ><ion-icon
+                                    alt="Noël on Twitter"
+                                    slot="icon"
+                                    name="logo-twitter"
+                                    margin-start
+                                    margin-end
+                                ></ion-icon>
+                                @noel_mace</deckgo-social
+                            >
+                        </div>
+                        <div slot="social-link">
+                            <deckgo-social linkedin="noelmace/"
+                                ><ion-icon
+                                    alt="Noël on Linkedin"
+                                    slot="icon"
+                                    name="logo-linkedin"
+                                    margin-start
+                                    margin-end
+                                ></ion-icon>
+                                in/noelmace</deckgo-social
+                            >
+                        </div>
+                    </deckgo-slide-author>
+
+                    <deckgo-slide-qrcode
+                        content="https://devoxxbe-2019.wof.show"
+                        style="--deckgo-qrcode-color-fill: black;"
+                    >
+                        <h1 slot="title">Slides</h1>
+                        <div slot="content" class="wof-show">
+                            <a
+                                href="https://devoxxbe-2019.wof.show"
+                                style="font-weight: bold"
+                                target="_blank"
+                                rel="noopener"
+                                ><span class="sub">devoxxbe-2019.</span
+                                >wof.show</a
+                            >
+                        </div>
+                    </deckgo-slide-qrcode>
 
                     <!-- #endregion intro -->
 
@@ -514,10 +682,111 @@
                     </deckgo-slide-title>
 
                     <deckgo-slide-content>
+                        <h1 slot="title">June 15, 2015</h1>
+                        <div
+                            slot="content"
+                            style="text-align: center; width: 100%"
+                        >
+                            <p>
+                                <a
+                                    href="https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/"
+                                >
+                                    Escaping Tabs Without Losing Our Soul</a
+                                >
+                            </p>
+                            <figure>
+                                <img
+                                    data-src="assets/img/intro-pwa/alex_russel.png"
+                                    alt="Alex Russel"
+                                />
+                                <figcaption>
+                                    <a
+                                        href="https://infrequently.org/about-me/"
+                                        style="display: block"
+                                        >Alex Russell</a
+                                    >software engineer at Google
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div slot="notes" show>PWA</div>
+                    </deckgo-slide-content>
+
+                    <deckgo-slide-title>
+                        <div slot="title" class="flex flex-center">
+                            <h1 class="quotation">
+                                There is now another way. An
+                                <span class="strong">evolution</span> has taken
+                                place in browsers.
+                            </h1>
+                        </div>
+                    </deckgo-slide-title>
+
+                    <deckgo-slide-title>
+                        <div slot="title" class="flex flex-center">
+                            <h1 class="quotation">
+                                <span class="strong">Just websites</span> that
+                                took all the right vitamins.
+                            </h1>
+                        </div>
+                    </deckgo-slide-title>
+
+                    <deckgo-slide-title>
+                        <div slot="title" class="flex flex-center">
+                            <h1 class="quotation">
+                                Sites have to
+                                <span class="strong">earn</span> some rights
+                                over time as you use them more and more.
+                            </h1>
+                        </div>
+                    </deckgo-slide-title>
+
+                    <deckgo-slide-title>
+                        <div slot="title" class="flex flex-center">
+                            <h1 class="quotation">
+                                They
+                                <span class="strong">progressively</span> become
+                                “apps”.
+                            </h1>
+                        </div>
+                    </deckgo-slide-title>
+
+                    <deckgo-slide-content>
                         <div slot="content" class="flex flex-center">
                             <img data-src="assets/logos/pwa.svg" alt="pwa" />
                         </div>
                         <div slot="notes" show>PWA</div>
+                    </deckgo-slide-content>
+
+                    <deckgo-slide-content>
+                        <h1 slot="title">The rise of PWA</h1>
+                        <div slot="content" style="width: 100%">
+                            <script
+                                type="text/javascript"
+                                src="https://ssl.gstatic.com/trends_nrtr/1982_RC01/embed_loader.js"
+                            ></script>
+                            <script type="text/javascript">
+                                trends.embed.renderExploreWidget(
+                                    'TIMESERIES',
+                                    {
+                                        comparisonItem: [
+                                            {
+                                                keyword: 'Progressive web app',
+                                                geo: '',
+                                                time: '2015-06-01 2019-10-28'
+                                            }
+                                        ],
+                                        category: 0,
+                                        property: ''
+                                    },
+                                    {
+                                        exploreQuery:
+                                            'date=2015-06-01%202019-10-28&q=Progressive%20web%20app',
+                                        guestPath:
+                                            'https://trends.google.com:443/trends/embed/'
+                                    }
+                                );
+                            </script>
+                        </div>
                     </deckgo-slide-content>
 
                     <deckgo-slide-content
@@ -526,38 +795,117 @@
                     >
                     </deckgo-slide-content>
 
-                    <deckgo-slide-content class="fire-bg fire-icons dark">
+                    <deckgo-slide-content
+                        style="--background:center no-repeat url('assets/img/business.png')"
+                        class="bg-img"
+                    >
+                    </deckgo-slide-content>
+
+                    <deckgo-slide-content class="fire-icons">
                         <h1 slot="title" hidden>F.I.R.E.</h1>
                         <div slot="content" class="img-row fill">
-                            <div class="img-container">
+                            <figure>
                                 <img
                                     data-src="assets/icons/fast.svg"
                                     style="background: #dd311f"
                                 />
-                                <h2>F.</h2>
-                            </div>
-                            <div class="img-container">
+                                <figcaption>
+                                    F<deckgo-reveal
+                                        ><span>ast</span>
+                                    </deckgo-reveal>
+                                </figcaption>
+                            </figure>
+                            <figure>
                                 <img
                                     data-src="assets/icons/add_to_home_screen.svg"
                                     style="background: #249f5a"
                                 />
-                                <h2>I.</h2>
-                            </div>
-                            <div class="img-container">
+                                <figcaption>
+                                    I<deckgo-reveal
+                                        ><span>ntegrated</span>
+                                    </deckgo-reveal>
+                                </figcaption>
+                            </figure>
+                            <figure>
                                 <img
                                     data-src="assets/icons/check_circle_outline.svg"
                                     style="background: #314ffe"
                                 />
-                                <h2>R.</h2>
-                            </div>
-                            <div class="img-container">
+                                <figcaption>
+                                    R<deckgo-reveal
+                                        ><span>eliable</span>
+                                    </deckgo-reveal>
+                                </figcaption>
+                            </figure>
+                            <figure>
                                 <img
                                     data-src="assets/icons/touch.svg"
                                     style="background: #773f9b"
                                 />
-                                <h2>E.</h2>
-                            </div>
+                                <figcaption>
+                                    E<deckgo-reveal
+                                        ><span>ngaging</span>
+                                    </deckgo-reveal>
+                                </figcaption>
+                            </figure>
                         </div>
+                    </deckgo-slide-content>
+
+                    <!-- TODO: propose a deckgo-hide component & merge this slide with the previous one -->
+                    <deckgo-slide-content class="fire-icons">
+                        <h1 slot="title" hidden>F.I.R.E.</h1>
+                        <div slot="content" class="img-row fill">
+                            <figure>
+                                <img
+                                    data-src="assets/icons/fast.svg"
+                                    style="background: #dd311f"
+                                />
+                                <figcaption>
+                                    <deckgo-reveal>
+                                        <span>App Shell (and more...)</span>
+                                    </deckgo-reveal>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img
+                                    data-src="assets/icons/add_to_home_screen.svg"
+                                    style="background: #249f5a"
+                                />
+                                <figcaption>
+                                    <deckgo-reveal>
+                                        <span>Manifest</span>
+                                    </deckgo-reveal>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img
+                                    data-src="assets/icons/check_circle_outline.svg"
+                                    style="background: #314ffe"
+                                />
+                                <figcaption>
+                                    <deckgo-reveal>
+                                        <span>Service Worker</span>
+                                    </deckgo-reveal>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img
+                                    data-src="assets/icons/touch.svg"
+                                    style="background: #773f9b"
+                                />
+                                <figcaption>
+                                    <deckgo-reveal>
+                                        <span>Push API (and UX)</span>
+                                    </deckgo-reveal>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </deckgo-slide-content>
+
+                    <deckgo-slide-content
+                        style="--background:center no-repeat url('assets/img/cleaning-confetti.jpg')"
+                        class="bg-img"
+                    >
                     </deckgo-slide-content>
 
                     <!-- #endregion PWA-->

@@ -32,12 +32,20 @@ Standardization process, involving standardization authorities and integrators (
 
 > Web Hypertext Application Technology Working Group - [whatwg.org](https://whatwg.org/)
 
+##### Why it was created
+
+- [HTML living standard - History](https://html.spec.whatwg.org/multipage/introduction.html#history-2)
+- [XHTML™ 2.0 - introduction](https://www.w3.org/TR/2010/NOTE-xhtml2-20101216/introduction.html#s_intro)
+- [XForms archive on MDN](https://developer.mozilla.org/en-US/docs/Archive/Web/XForms)
+
 ##### How it works
 
 - [FAQ](https://whatwg.org/faq)
 - [Working Mode](https://whatwg.org/working-mode)
 - [Workstream Policy](https://whatwg.org/workstream-policy)
 - [Participate](https://github.com/whatwg/participate.whatwg.org)
+- [HTML Standard Contributor Guidelines](https://github.com/whatwg/html/blob/master/CONTRIBUTING.md)
+- [Contributor Guidelines](https://github.com/whatwg/meta/blob/master/CONTRIBUTING.md)
 
 Since May 2019, the [war is over](https://www.theregister.co.uk/2019/05/29/w3c_whatwg_working_on_one_html_dom_spec/)
 between the W3C and WHATWG!
@@ -74,7 +82,8 @@ July 2015: [Launch announcement](https://www.w3.org/blog/2015/07/wicg/)
 
 ##### How it works
 
-[Process](https://tc39.es/process-document/)
+- [Process](https://tc39.es/process-document/)
+- [Test 262](https://github.com/tc39/test262)
 
 ##### Contribute
 
@@ -97,6 +106,40 @@ July 2015: [Launch announcement](https://www.w3.org/blog/2015/07/wicg/)
 - :bug: https://bugzilla.mozilla.org/describecomponents.cgi
 - :twisted_rightwards_arrows: https://wiki.mozilla.org/Platform/Roadmap
 - :writing_hand: https://hacks.mozilla.org/
+
+### Remaining controversies
+
+#### EME
+
+- [Encrypted Media Extensions Standard](https://w3c.github.io/encrypted-media/)
+- [What is EME?](https://developers.google.com/web/fundamentals/media/eme)
+
+##### Adoption
+
+Youtube & Netflix quickly adopted EME, while moving away from, respectively, Flash and Silverlight.
+
+Regarding Youtube, we can simply notice that the "Embed a playlist" documentation still gives today the following example:
+
+```html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+```
+
+Where [encrypted-media](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/encrypted-media)
+is explicitly allowed in this iframe feature policy.
+
+On that topic, read [Why YouTube & Netflix use MPEG-DASH in HTML5](https://bitmovin.com/status-mpeg-dash-today-youtube-netflix-use-html5-beyond/) and [HTML5 video at Netflix](https://medium.com/netflix-techblog/html5-video-at-netflix-721d1f143979).
+
+##### Opposition
+
+From the very beginning, EME faced strong criticism from representatives from Mozilla. Here are some example messages:
+
+- [from Boris Zbarsky](https://lists.w3.org/Archives/Public/public-html/2012Feb/0352.html)
+- [from Ian Hickson](https://lists.w3.org/Archives/Public/public-html/2012Feb/0274.html)
+
+It even caused some [protests](https://www.vice.com/en_us/article/jpgpjx/we-marched-with-richard-stallman-at-a-drm-protest-last-night-w3-consortium-MIT-joi-ito),
+led by Richard Stallman and the FSF.
+
+After its standardization, the [EFF Announced its resignation from W3C](https://www.eff.org/deeplinks/2017/09/open-letter-w3c-director-ceo-team-and-membership).
 
 ## An integrated Web
 

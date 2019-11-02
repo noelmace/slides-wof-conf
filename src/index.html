@@ -146,33 +146,7 @@
         <meta name="msapplication-tap-highlight" content="no" />
 
         <style>
-            :root {
-                background: #ffffff;
-                --ion-background-color: #ffffff;
-                --main-color: #ed6c30;
-                --alt-color: #fcc21b;
-                --slide-split-title-display: block;
-                --slide-split-padding-top: 0;
-            }
-
-            deckgo-deck {
-                color: black;
-                --color: black;
-                --ion-text-color: black;
-            }
-
-            deckgo-deck h1,
-            deckgo-deck h2,
-            deckgo-deck h3 {
-                /* TODO: deckgo issue */
-                overflow: visible !important;
-            }
-
             /* Until Web Components are loaded, don't display content */
-            body {
-                background: #ffffff;
-            }
-
             ion-app.loading,
             ion-app.loading a {
                 color: transparent;
@@ -184,337 +158,6 @@
 
             ion-app.loading {
                 display: none;
-            }
-
-            :root {
-                background: #ffffff;
-                --ion-background-color: #ffffff;
-            }
-
-            deckgo-deck {
-                color: black;
-                --color: black;
-                --ion-text-color: black;
-                --deckgo-highlight-code-line-background: yellow;
-            }
-
-            /* Until Web Components are loaded, don't display content */
-            body {
-                background: #ffffff;
-
-                --react-color: #61dafb;
-                --preact-color: #673ab8;
-                --redux-color: #764abc;
-                --lit-element-color: #2196f3;
-                --jquery-color: #d18f4f;
-            }
-
-            ion-app.loading,
-            ion-app.loading a {
-                color: transparent;
-            }
-
-            ion-app.loading a {
-                color: transparent;
-            }
-
-            ion-app.loading {
-                display: none;
-            }
-
-            .dark {
-                --background: #000;
-                --color: #fff;
-            }
-
-            .full {
-                width: 100%;
-                height: 100%;
-            }
-
-            .big {
-                font-size: 5em;
-            }
-
-            .flex {
-                width: 100%;
-                height: 100%;
-                display: flex;
-            }
-
-            .flex-center {
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                flex-direction: column;
-            }
-
-            .flex-end {
-                justify-content: flex-end;
-                align-items: center;
-                text-align: center;
-                flex-direction: column;
-            }
-
-            .flex-row {
-                display: flex;
-                justify-content: space-around;
-                flex-direction: row;
-                width: 100%;
-            }
-
-            .flex-center img,
-            .img-row img {
-                max-height: 70vh;
-            }
-
-            .flex-center img,
-            .img-row.fill img {
-                width: 100%;
-            }
-
-            .img-row {
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                flex-direction: row;
-                align-items: center;
-                text-align: center;
-            }
-
-            .img-row .img-container,
-            .img-row figure {
-                flex: 1 1;
-            }
-
-            .img-row img {
-                padding: 1em 1em;
-            }
-
-            .img-small-line {
-                display: flex;
-                justify-content: center;
-                flex-direction: row;
-                align-items: center;
-                text-align: center;
-                flex-shrink: 1;
-                justify-content: space-around;
-                max-height: 200px;
-                margin: 1em;
-            }
-
-            .img-small-line > * {
-                flex: 0 1 300px;
-                margin: 0.5em;
-            }
-
-            .imgs-list {
-                flex-wrap: wrap;
-            }
-
-            .imgs-list img {
-                max-height: 100px;
-                margin: 1em;
-            }
-
-            figure[slot='content'] {
-                text-align: center;
-                margin: 0;
-                width: 100%;
-                padding: 1em;
-                max-height: 100%;
-            }
-
-            figure[slot='content'] figcaption {
-                font-size: 2em;
-            }
-
-            figure[slot='content'] img {
-                max-width: 100%;
-                max-height: 100%;
-            }
-
-            .frame {
-                background: center no-repeat url('assets/img/frame-h.png');
-                background-size: contain;
-            }
-
-            h1 {
-                text-align: center;
-            }
-
-            .bg-img {
-                background-size: contain;
-            }
-
-            .frame * {
-                font-size: 2em;
-            }
-
-            .small-code {
-                --slide-padding-top: 8em;
-            }
-
-            .strong {
-                font-weight: bold;
-            }
-
-            .slide-todo {
-                --background: #f00;
-                color: #000;
-            }
-
-            .wof-show > a {
-                color: red;
-                text-decoration: none;
-                font-size: 2em;
-                text-shadow: 1px 1px 2px #000;
-            }
-
-            .wof-show .sub {
-                color: black;
-                text-shadow: 1px 1px 2px #fff;
-                display: inline-block;
-            }
-
-            .center {
-                text-align: center;
-            }
-
-            .lib-chart {
-                --deckgo-chart-fill-color-1: var(--react-color);
-                --deckgo-chart-fill-color-2: var(--preact-color);
-                --deckgo-chart-fill-color-3: var(--redux-color);
-                --deckgo-chart-fill-color-4: var(--lit-element-color);
-                --deckgo-chart-fill-color-5: var(--jquery-color);
-            }
-
-            .twitter-content {
-                width: 100%;
-            }
-
-            .twitter-content twitter-widget {
-                margin: 0 auto;
-            }
-
-            .title-slide {
-                --background: var(--main-color);
-            }
-
-            .subtitle-slide {
-                --background: var(--alt-color);
-            }
-
-            deckgo-social .link {
-                color: #4c8dff;
-            }
-
-            .fire-bg {
-                background: center no-repeat url('assets/img/flames.jpg');
-                background-size: cover;
-            }
-
-            .fire-icons figure {
-                margin: 1em;
-            }
-
-            .fire-icons .img-row {
-                align-items: start;
-                margin-top: 1em;
-            }
-
-            .fire-icons figcaption {
-                font-size: 1.4em;
-                font-weight: bold;
-            }
-
-            .fire-icons figcaption:not(:first-of-type) {
-                margin-top: 1em;
-                font-size: 1.2em;
-            }
-
-            deckgo-reveal.compact {
-                text-align: center;
-            }
-
-            deckgo-reveal.compact > * {
-                margin: 0;
-            }
-
-            /* TODO: discuss with deckgo team */
-            deckgo-slide-split deckgo-reveal > * {
-                height: fit-content !important;
-            }
-
-            .whatwg.note {
-                font: 1em/1.45 Helvetica Neue, sans-serif, Droid Sans Fallback;
-                padding: 0.5em 1em;
-                position: relative;
-                padding-top: 1em;
-                padding-bottom: 1em;
-                color: green;
-                background: #ddffdd;
-                font-style: italic;
-                margin: 1em 0;
-                margin-top: 1.5em;
-            }
-
-            .whatwg.note::before {
-                background: green;
-                padding: 0.15em 0.25em;
-                position: absolute;
-                top: -0.8em;
-                left: -0.8em;
-                color: white;
-                content: 'Note';
-                font: 1em/1.45 Helvetica Neue, sans-serif, Droid Sans Fallback;
-            }
-
-            .ciu-wrapper {
-                width: 100%;
-            }
-
-            .ciu_embed {
-                margin: 0 auto;
-            }
-
-            .reveal-list {
-                list-style: none;
-            }
-
-            .reveal-list li {
-                margin: 0.5em 0;
-            }
-
-            .square {
-                border: solid black 3px;
-                box-shadow: 2px 2px 2px black;
-            }
-
-            @media (min-width: 992px) {
-                .ciu_embed {
-                    width: 800px;
-                }
-            }
-
-            .demo {
-                border: 2px red solid;
-            }
-
-            std-toast {
-                font-weight: bold;
-                font-size: 3em;
-            }
-
-            .quotation:before {
-                content: '«';
-                margin-right: 0.2em;
-            }
-
-            .quotation:after {
-                content: '»';
-                margin-left: 0.2em;
             }
         </style>
         <script src="https://cdn.jsdelivr.net/gh/ireade/caniuse-embed/caniuse-embed.min.js"></script>
@@ -630,6 +273,133 @@
                         <div slot="notes" show>INTRO LECTEUR</div>
                     </deckgo-slide-content>
 
+                    <deckgo-slide-content class="dark welcome-slide">
+                        <h1 slot="title" style="color:red">
+                            Requirements
+                        </h1>
+                        <div no-shadow slot="content">
+                            <p>
+                                If you want everything to work in this slides,
+                                you need:
+                            </p>
+
+                            <div>
+                                <ion-icon
+                                    alt="logo"
+                                    slot="icon"
+                                    src="assets/logos/chrome-canary.svg"
+                                    margin-start
+                                    margin-end
+                                    role="img"
+                                    class="md hydrated"
+                                    aria-label="logo"
+                                ></ion-icon>
+                                Chrome 79+ (Canary or Dev)
+                            </div>
+                            <div>
+                                <ion-icon
+                                    alt="settings"
+                                    slot="icon"
+                                    name="settings"
+                                    margin-start
+                                    margin-end
+                                    role="img"
+                                    class="md hydrated"
+                                    aria-label="settings"
+                                ></ion-icon>
+                                to go to chrome://flags
+                            </div>
+                            <div>
+                                <ion-icon
+                                    alt="settings"
+                                    slot="icon"
+                                    name="settings"
+                                    margin-start
+                                    margin-end
+                                    role="img"
+                                    class="md hydrated"
+                                    aria-label="settings"
+                                ></ion-icon>
+                                set #enable-experimental-web-platform-features
+                                to enabled
+                            </div>
+                            <div>
+                                <ion-icon
+                                    alt="settings"
+                                    slot="icon"
+                                    name="settings"
+                                    margin-start
+                                    margin-end
+                                    role="img"
+                                    class="md hydrated"
+                                    aria-label="settings"
+                                ></ion-icon>
+                                set #enable-built-in-module-all to enabled
+                            </div>
+                        </div>
+                        <!-- prettier-ignore -->
+                        <div slot="notes" show>INTRO LECTEUR</div>
+                    </deckgo-slide-content>
+
+                    <deckgo-slide-content class="dark welcome-slide">
+                        <h1 slot="title" style="color:red">
+                            Requirements
+                        </h1>
+                        <div no-shadow slot="content">
+                            <p>
+                                Optionally, for demos (scripts in the demo
+                                folder), you need:
+                            </p>
+
+                            <div>
+                                <ion-icon
+                                    alt="tux"
+                                    slot="icon"
+                                    name="logo-tux"
+                                    margin-start
+                                    margin-end
+                                    role="img"
+                                    class="md hydrated"
+                                    aria-label="tux"
+                                ></ion-icon>
+                                GNU/Linux (or MacOS ... and I guess git bash is
+                                ok too)
+                            </div>
+                            <div>
+                                <ion-icon
+                                    alt="logo"
+                                    slot="icon"
+                                    name="logo-android"
+                                    margin-start
+                                    margin-end
+                                    role="img"
+                                    class="md hydrated"
+                                    aria-label="logo"
+                                ></ion-icon>
+                                an Android device with Dev Mode enabled,
+                                connected to your computer using USB
+                            </div>
+                            <div>
+                                <ion-icon
+                                    alt="logo"
+                                    slot="icon"
+                                    name="logo-windows"
+                                    margin-start
+                                    margin-end
+                                    role="img"
+                                    class="md hydrated"
+                                    aria-label="logo"
+                                ></ion-icon>
+                                a Windows 10 VM in VirtualBox named "WinDev" (<a
+                                    href="https://aka.ms/windev_VM_virtualbox"
+                                    >aka.ms/windev_VM_virtualbox</a
+                                >)
+                            </div>
+                        </div>
+                        <!-- prettier-ignore -->
+                        <div slot="notes" show>INTRO LECTEUR</div>
+                    </deckgo-slide-content>
+
                     <deckgo-slide-countdown
                         until="2019-11-04T13:30:00.000+01:00"
                     >
@@ -641,8 +411,7 @@
                     </deckgo-slide-countdown>
 
                     <!-- #region intro -->
-
-                    <deckgo-slide-title class="title-slide">
+                    <deckgo-slide-title class="chapter-title-slide">
                         <h1 slot="title">The Web is on 🔥 F.I.R.E. 🔥</h1>
                         <div slot="content">
                             <h3>Deep-dive</h3>
@@ -731,10 +500,24 @@
 
                     <!-- #endregion intro -->
 
+                    <!-- #region Past & Present -->
+                    <deckgo-slide-title class="dark">
+                        <h1 slot="title">Part 1</h1>
+                        <h2 slot="content">
+                            Past & Present
+                        </h2>
+                    </deckgo-slide-title>
+
                     <!-- #region PWA -->
 
-                    <deckgo-slide-title class="title-slide">
-                        <h1 slot="title">On ... F.I.R.E.? 🤨</h1>
+                    <deckgo-slide-title class="chapter-title-slide">
+                        <h1 slot="title">FIRE & PWA</h1>
+                    </deckgo-slide-title>
+
+                    <!-- #region principles -->
+
+                    <deckgo-slide-title class="subchapter-title-slide">
+                        <h1 slot="title">FIRE origins</h1>
                     </deckgo-slide-title>
 
                     <deckgo-slide-content>
@@ -924,8 +707,16 @@
                         </div>
                     </deckgo-slide-content>
 
-                    <!-- TODO: propose a deckgo-hide component & merge this slide with the previous one -->
+                    <!-- #endregion principles -->
+
+                    <!-- #region Basis -->
+
+                    <deckgo-slide-title class="subchapter-title-slide">
+                        <h1 slot="title">Ya basic!</h1>
+                    </deckgo-slide-title>
+
                     <deckgo-slide-content class="fire-icons">
+                        <!-- TODO: propose a deckgo-hide component & merge this slide with the previous one -->
                         <h1 slot="title" hidden>F.I.R.E.</h1>
                         <div slot="content" class="img-row fill">
                             <figure>
@@ -975,6 +766,8 @@
                         </div>
                     </deckgo-slide-content>
 
+                    <!-- #region App Shell -->
+
                     <deckgo-slide-content>
                         <h1 slot="title" hidden>App Shell</h1>
                         <figure slot="content">
@@ -984,6 +777,10 @@
                             />
                         </figure>
                     </deckgo-slide-content>
+
+                    <!-- #endregion App Shell -->
+
+                    <!-- #region A2HS -->
 
                     <deckgo-slide-content>
                         <h1 slot="title">Manifest</h1>
@@ -1005,20 +802,13 @@
                     </deckgo-slide-content>
 
                     <deckgo-slide-content>
-                        <h1 slot="title">A2HS Support</h1>
+                        <h1 slot="title">A2HS is supported by</h1>
                         <deckgo-reveal
                             slot="content"
                             class="center"
                             style="font-size: 2em"
                         >
-                            <ion-icon
-                                name="checkbox-outline"
-                                alt="OK"
-                                margin-end
-                            ></ion-icon>
-                            <div
-                                style="display: inline-block; margin-right: .5em"
-                            >
+                            <div>
                                 <ion-icon
                                     alt="Firefox"
                                     slot="icon"
@@ -1029,7 +819,7 @@
                                     alt="mobile"
                                 ></ion-icon>
                             </div>
-                            <div style="display: inline-block">
+                            <div>
                                 <ion-icon
                                     alt="Chrome"
                                     slot="icon"
@@ -1044,9 +834,7 @@
                                     alt="desktop"
                                 ></ion-icon>
                             </div>
-                            <div
-                                style="display: inline-block; margin-left: .5em"
-                            >
+                            <div>
                                 <ion-icon
                                     alt="edge beta"
                                     slot="icon"
@@ -1061,6 +849,16 @@
                                     alt="desktop"
                                 ></ion-icon>
                             </div>
+                        </deckgo-reveal>
+                    </deckgo-slide-content>
+
+                    <deckgo-slide-content>
+                        <h1 slot="title">A2HS Support - WIP</h1>
+                        <deckgo-reveal
+                            slot="content"
+                            class="center"
+                            style="font-size: 2em"
+                        >
                             <div style="margin-top: 1em">
                                 <ion-icon
                                     name="bug"
@@ -1080,15 +878,17 @@
                             </div>
                             <div>Since oct. '17</div>
                             <div>P3 - Oct. 10, '19</div>
-                            <div style="margin-top: 1em; display: inline-block">
-                                <ion-icon
-                                    alt="skull"
-                                    slot="icon"
-                                    src="assets/icons/skull.svg"
-                                    margin-end
-                                ></ion-icon>
-                            </div>
-                            <div style="margin-top: 1em; display: inline-block">
+                        </deckgo-reveal>
+                    </deckgo-slide-content>
+
+                    <deckgo-slide-content>
+                        <h1 slot="title">A2HS Support - 🤦</h1>
+                        <deckgo-reveal
+                            slot="content"
+                            class="center"
+                            style="font-size: 2em"
+                        >
+                            <div>
                                 <ion-icon
                                     alt="Safari"
                                     slot="icon"
@@ -1096,7 +896,7 @@
                                     margin-end
                                 ></ion-icon>
                             </div>
-                            <div style="margin-top: 1em; display: inline-block">
+                            <div>
                                 <ion-icon
                                     alt="conspiracy"
                                     slot="icon"
@@ -1104,7 +904,7 @@
                                     margin-end
                                 ></ion-icon>
                             </div>
-                            <div style="margin-top: 1em; display: inline-block">
+                            <div>
                                 <ion-icon
                                     alt="Firefox"
                                     slot="icon"
@@ -1129,6 +929,10 @@
                             </div>
                         </deckgo-reveal>
                     </deckgo-slide-content>
+
+                    <!-- #endregion A2HS -->
+
+                    <!-- #region SW -->
 
                     <deckgo-slide-content>
                         <h1 slot="title">SW support</h1>
@@ -1160,6 +964,10 @@
                         class="bg-img"
                     >
                     </deckgo-slide-content>
+
+                    <!-- #endregion SW -->
+
+                    <!-- #region Push Notifications -->
 
                     <deckgo-slide-content>
                         <h1 slot="title">Push API</h1>
@@ -1215,6 +1023,10 @@
                     >
                     </deckgo-slide-content>
 
+                    <!-- #endregion Push Notifications -->
+
+                    <!-- #endregion Basis -->
+
                     <deckgo-slide-content
                         style="--background:center no-repeat url('assets/img/cleaning-confetti.jpg')"
                         class="bg-img"
@@ -1228,9 +1040,22 @@
 
                     <!-- #region standardization -->
 
-                    <deckgo-slide-title class="title-slide">
-                        <h1 slot="title">How the Web evolves</h1>
+                    <deckgo-slide-title class="chapter-title-slide">
+                        <h1 slot="title">Keeping Up!</h1>
                     </deckgo-slide-title>
+
+                    <deckgo-slide-content>
+                        <h1 slot="title">Methodology</h1>
+                        <ol slot="content">
+                            <deckgo-reveal>
+                                <li>watch & discuss</li>
+                                <li>experiment & give feedbacks</li>
+                                <li>release (beta) feature</li>
+                            </deckgo-reveal>
+                        </ol>
+                    </deckgo-slide-content>
+
+                    <!-- #region W3C -->
 
                     <deckgo-slide-content>
                         <figure slot="content" class="flex flex-center">
@@ -1315,7 +1140,7 @@
                     </deckgo-slide-content>
 
                     <deckgo-slide-content>
-                        <h1 slot="title">XHTML vs HTML</h1>
+                        <h1 slot="title">The end of HTML?</h1>
                         <ul slot="content">
                             <deckgo-reveal>
                                 <li>1997: HTML 3.2 & 4</li>
@@ -1325,7 +1150,14 @@
                                     standard
                                 </li>
                                 <li>1999: HTML 4.01</li>
-                                <li>2000: XHTML 1.0</li>
+                            </deckgo-reveal>
+                        </ul>
+                    </deckgo-slide-content>
+
+                    <deckgo-slide-content>
+                        <h1 slot="title">The end of HTML?</h1>
+                        <ul slot="content">
+                            <deckgo-reveal>
                                 <li>2003: XForms</li>
                                 <li class="strong">2004</li>
                                 <li style="margin-left: 2em">
@@ -1338,6 +1170,10 @@
                             </deckgo-reveal>
                         </ul>
                     </deckgo-slide-content>
+
+                    <!-- #endregion W3C -->
+
+                    <!-- #region WHATWG -->
 
                     <deckgo-slide-content>
                         <h1 slot="title">Web Specs need to:</h1>
@@ -1388,6 +1224,10 @@
                     >
                     </deckgo-slide-content>
 
+                    <!-- #endregion WHATWG -->
+
+                    <!-- #region W3C w/ WHATWG -->
+
                     <deckgo-slide-content>
                         <figure slot="content" class="flex flex-center">
                             <deckgo-reveal
@@ -1409,6 +1249,75 @@
                         class="bg-img"
                     >
                     </deckgo-slide-content>
+
+                    <deckgo-slide-content>
+                        <h1 slot="title">Controversies</h1>
+                        <div slot="content" style="width: 100%">
+                            <deckgo-reveal>
+                                <div style="text-align: center">
+                                    <h2
+                                        style="
+                                                    font: 100% sans-serif;
+                                                    color: #005A9C;
+                                                    font-weight: bold;
+                                                    margin: 0;
+                                                    padding: 0;
+                                                    font-size: 220%;"
+                                    >
+                                        Encrypted Media Extensions
+                                    </h2>
+                                    <h3
+                                        style="
+                                                    font: 100% sans-serif;
+                                                    color: #005A9C;
+                                                    font-size: 140%;
+                                                    margin: 0;
+                                                    padding: 0;"
+                                    >
+                                        W3C Recommendation, 14 December 2017
+                                    </h3>
+                                </div>
+                                <div class="img-small-line">
+                                    <figure>
+                                        <img
+                                            data-src="assets/logos/netflix.svg"
+                                            alt="netflix"
+                                        />
+                                    </figure>
+                                    <figure>
+                                        <img
+                                            data-src="assets/logos/youtube.svg"
+                                            alt="youtube"
+                                        />
+                                    </figure>
+                                </div>
+                                <div class="img-small-line">
+                                    <figure>
+                                        <img
+                                            data-src="assets/logos/mozilla.svg"
+                                            alt="mozilla"
+                                        />
+                                    </figure>
+                                    <figure>
+                                        <img
+                                            data-src="assets/logos/fsf.svg"
+                                            alt="fsf"
+                                        />
+                                    </figure>
+                                    <figure>
+                                        <img
+                                            data-src="assets/logos/eff.svg"
+                                            alt="eff"
+                                        />
+                                    </figure>
+                                </div>
+                            </deckgo-reveal>
+                        </div>
+                    </deckgo-slide-content>
+
+                    <!-- #endregion W3C w/ WHATWG -->
+
+                    <!-- #region TC39 -->
 
                     <deckgo-slide-content>
                         <figure slot="content" class="flex flex-center">
@@ -1460,6 +1369,10 @@
                         </ul>
                     </deckgo-slide-content>
 
+                    <!-- #endregion TC39 -->
+
+                    <!-- #region Browsers -->
+
                     <deckgo-slide-content>
                         <h1 slot="title" hidden>Integrators</h1>
                         <div slot="content" class="img-row fill">
@@ -1480,83 +1393,114 @@
                         <div slot="notes">Chrome & Firefox</div>
                     </deckgo-slide-content>
 
+                    <!-- #endregion Browsers -->
+
                     <deckgo-slide-content>
-                        <h1 slot="title">Controversies</h1>
-                        <div slot="content" style="width: 100%">
-                            <deckgo-reveal>
-                                <div style="text-align: center">
-                                    <h2
-                                        style="
-                                                font: 100% sans-serif;
-                                                color: #005A9C;
-                                                font-weight: bold;
-                                                margin: 0;
-                                                padding: 0;
-                                                font-size: 220%;"
-                                    >
-                                        Encrypted Media Extensions
-                                    </h2>
-                                    <h3
-                                        style="
-                                                font: 100% sans-serif;
-                                                color: #005A9C;
-                                                font-size: 140%;
-                                                margin: 0;
-                                                padding: 0;"
-                                    >
-                                        W3C Recommendation, 14 December 2017
-                                    </h3>
-                                </div>
-                                <div class="img-small-line">
-                                    <figure>
-                                        <img
-                                            data-src="assets/logos/netflix.svg"
-                                            alt="netflix"
-                                        />
-                                    </figure>
-                                    <figure>
-                                        <img
-                                            data-src="assets/logos/youtube.svg"
-                                            alt="youtube"
-                                        />
-                                    </figure>
-                                </div>
-                                <div class="img-small-line">
-                                    <figure>
-                                        <img
-                                            data-src="assets/logos/mozilla.svg"
-                                            alt="mozilla"
-                                        />
-                                    </figure>
-                                    <figure>
-                                        <img
-                                            data-src="assets/logos/fsf.svg"
-                                            alt="fsf"
-                                        />
-                                    </figure>
-                                    <figure>
-                                        <img
-                                            data-src="assets/logos/eff.svg"
-                                            alt="eff"
-                                        />
-                                    </figure>
-                                </div>
+                        <h1 slot="title">Methodology</h1>
+                        <ol slot="content">
+                            <deckgo-reveal class="reveal-list">
+                                <li>
+                                    watch
+                                    <span style="float: right;">
+                                        <span class="comment">drafts</span>
+                                        <ion-icon
+                                            src="assets/logos/whatwg.svg"
+                                        ></ion-icon>
+                                        <ion-icon
+                                            src="assets/logos/wicg.svg"
+                                        ></ion-icon>
+                                        <ion-icon
+                                            src="assets/logos/tc39.svg"
+                                        ></ion-icon>
+                                    </span>
+                                </li>
+                                <li>
+                                    experiment
+                                    <span style="float: right;">
+                                        <span class="comment">prototype</span>
+                                        <ion-icon
+                                            src="assets/logos/chrome-canary.svg"
+                                        ></ion-icon>
+                                        <ion-icon
+                                            src="assets/logos/firefox-nightly.svg"
+                                        ></ion-icon>
+                                    </span>
+                                </li>
+                                <li>
+                                    &beta; feature
+                                    <span style="float: right;">
+                                        <span class="comment"
+                                            >origin trial</span
+                                        >
+                                        <ion-icon
+                                            src="assets/logos/chrome-canary.svg"
+                                        ></ion-icon>
+                                    </span>
+                                </li>
+                                <li>
+                                    release
+                                    <span style="float: right;">
+                                        <ion-icon
+                                            src="assets/logos/chrome.svg"
+                                        ></ion-icon>
+                                        <ion-icon
+                                            src="assets/logos/firefox.svg"
+                                        ></ion-icon>
+                                        <ion-icon
+                                            src="assets/logos/safari.svg"
+                                        ></ion-icon>
+                                    </span>
+                                </li>
                             </deckgo-reveal>
-                        </div>
+                        </ol>
                     </deckgo-slide-content>
 
                     <!-- #endregion standardization -->
 
-                    <!-- #region news -->
+                    <deckgo-slide-content
+                        style="--background:center no-repeat url('assets/img/question.jpeg')"
+                        class="bg-img"
+                    >
+                    </deckgo-slide-content>
+                    <deckgo-slide-content
+                        style="--background:center no-repeat url('assets/img/break.jpeg')"
+                        class="bg-img"
+                    >
+                    </deckgo-slide-content>
 
-                    <deckgo-slide-title class="title-slide">
-                        <h1 slot="title">What's hot?</h1>
+                    <!-- #endregion Past & Present -->
+
+                    <!-- #region Future -->
+
+                    <deckgo-slide-title class="dark">
+                        <h1 slot="title">Part 2</h1>
+                        <h2 slot="content">The future 🧙‍♂️🔮</h2>
                     </deckgo-slide-title>
+
+                    <deckgo-slide-content>
+                        <h1 slot="title">tendencies</h1>
+                        <ol slot="content" class="reveal-list">
+                            <deckgo-reveal>
+                                <li>🏆 put an end to native apps</li>
+                                <li>👐 adapt to user preferences</li>
+                                <li>
+                                    🦸 reduce the need for libraries /
+                                    frameworks
+                                </li>
+                            </deckgo-reveal>
+                        </ol>
+                    </deckgo-slide-content>
 
                     <!-- #region integrated -->
 
-                    <deckgo-slide-title class="subtitle-slide">
+                    <deckgo-slide-title class="chapter-title-slide">
                         <h1 slot="title">An integrated Web</h1>
+                    </deckgo-slide-title>
+
+                    <!-- #region A2HS -->
+                    <deckgo-slide-title class="subchapter-title-slide">
+                        <h1 slot="title">A2HS</h1>
+                        <h2 slot="content">a new approach</h2>
                     </deckgo-slide-title>
 
                     <deckgo-slide-content>
@@ -1567,7 +1511,6 @@
                         >
                             <img
                                 data-src="assets/img/install-promo/a2hs-infobar-cropped.png"
-                                style="margin-top: 2em"
                             />
                             <deckgo-reveal style="font-size: 2em">
                                 <p>interim experience</p>
@@ -1603,7 +1546,7 @@
                         >
                             <img
                                 data-src="assets/img/install-promo/firefox/js13kpwa-icon.png"
-                                style="margin: 2em auto"
+                                style="margin: 0 auto"
                             />
                         </div>
                     </deckgo-slide-content>
@@ -1671,33 +1614,265 @@
                         </div>
                     </deckgo-slide-content>
 
-                    <deckgo-slide-split>
-                        <h1 slot="title">Closing the App Gapp</h1>
-                        <div slot="start">
+                    <!-- #endregion A2HS -->
+
+                    <!-- #region app-gap -->
+                    <deckgo-slide-title class="subchapter-title-slide">
+                        <h1 slot="title">Closing the App Gap</h1>
+                    </deckgo-slide-title>
+
+                    <deckgo-slide-content>
+                        <div slot="content" class="img-row">
                             <img
                                 data-src="assets/img/capabilities-process.jpg"
                             />
                         </div>
-                        <div slot="end">
-                            <deckgo-reveal class="compact">
-                                <h2>Capabilities in flight</h2>
-                                <p>Badging API</p>
-                                <p>Contact Picker API</p>
-                                <p>Get Installed Related Apps API</p>
-                                <p>Native File System API</p>
-                                <p>Shape Detection API</p>
-                                <p>Wake Lock API</p>
-                                <h2>Launched capabilities</h2>
-                                <p>Async Clipboard API (images)</p>
-                                <p>Web Share Target</p>
+                    </deckgo-slide-content>
+
+                    <deckgo-slide-split class="split-text">
+                        <h1 slot="title">New Capabilities</h1>
+                        <deckgo-reveal
+                            slot="start"
+                            style="justify-content: start;"
+                        >
+                            <h2>🚀 Launched</h2>
+                            <p>Web Share Target</p>
+                            <p>Async Clipboard API (images)</p>
+                        </deckgo-reveal>
+                        <deckgo-reveal
+                            slot="end"
+                            style="justify-content: start;"
+                        >
+                            <h2>🚧 in flight</h2>
+                            <p>Badging API</p>
+                            <p>Shape Detection API</p>
+                            <p>Contact Picker API</p>
+                            <p>Get Installed Related Apps API</p>
+                            <p>Native File System API</p>
+                            <p>Wake Lock API</p>
+                        </deckgo-reveal>
+                    </deckgo-slide-split>
+
+                    <!-- #region Async Clipboard API -->
+
+                    <deckgo-slide-title class="topic-title-slide">
+                        <h1 slot="title">Async Clipboard API</h1>
+                    </deckgo-slide-title>
+
+                    <deckgo-slide-code
+                        src="assets/code-samples/app-gap/clipboard-sum.js"
+                    >
+                        <h1 slot="title">From specific to generic</h1>
+                    </deckgo-slide-code>
+
+                    <deckgo-slide-content>
+                        <h1 slot="title">Current Limitations w/ images</h1>
+                        <ul slot="content" class="reveal-list">
+                            <deckgo-reveal>
+                                <li>Chrome 76+ only</li>
+                                <li>PNG only</li>
+                                <li>only one ClipboardItem</li>
                             </deckgo-reveal>
+                        </ul>
+                    </deckgo-slide-content>
+
+                    <!-- #region Web Share Target-->
+
+                    <deckgo-slide-title class="topic-title-slide">
+                        <h1 slot="title">Web Share Target</h1>
+                    </deckgo-slide-title>
+
+                    <deckgo-slide-code
+                        language="javascript"
+                        src="assets/code-samples/app-gap/web-share.js"
+                    >
+                        <h1 slot="title">Web Share API</h1>
+                    </deckgo-slide-code>
+
+                    <deckgo-slide-content>
+                        <h1 slot="title">web-share - support</h1>
+                        <div slot="content" class="ciu-wrapper">
+                            <p
+                                class="ciu_embed"
+                                data-feature="web-share"
+                                data-periods="future_1,current,past_1,past_2"
+                                data-accessible-colours="false"
+                            >
+                                <a href="http://caniuse.com/#feat=web-share"
+                                    >Can I Use web-share?</a
+                                >
+                                Data on support for the web-share feature across
+                                the major browsers from caniuse.com.
+                            </p>
+                        </div>
+                    </deckgo-slide-content>
+
+                    <deckgo-slide-content>
+                        <h1 slot="title">Web Share Target</h1>
+                        <figure slot="content">
+                            <img
+                                src="assets/img/app-gap/webshare.png"
+                                style="max-height:300px"
+                            />
+                            <figcaption>
+                                Share <span class="strong">to</span> a Web App
+                            </figcaption>
+                        </figure>
+                    </deckgo-slide-content>
+
+                    <deckgo-slide-split>
+                        <h1 slot="title">Demo</h1>
+                        <div slot="start">
+                            <h2>Step 1</h2>
+                            <ion-button expand="full" id="demo1"
+                                >Copy the tweet</ion-button
+                            >
+                            <h2>Step 2</h2>
+                            <ion-button expand="full" id="demo2"
+                                >Copy the tweet</ion-button
+                            >
+                        </div>
+                        <div slot="end">
+                            <h2>Step 3</h2>
+                            <ion-button expand="full" id="demo3"
+                                >Copy the tweet</ion-button
+                            >
+                            <ion-button expand="full" id="demo-img"
+                                >Copy an image</ion-button
+                            >
+                        </div>
+                        <script>
+                            const tweet1 = `Hey look, I can share my slides with the Twitter #PWA during my talk at #DevoxxBelgium using Async Clipboard & Web Share Target APIs! 🙌 @devoxx #usetheplatform`;
+                            const tweet2 = `Great time at #DevoxxBelgium, sharing a picture with the Twitter #PWA using the Web Share Target API Level 2 😁! @devoxx #usetheplatform`;
+                            const tweet3 = `I can even share an image using the Async Clipboard Level 2 🤯! #DevoxxBelgium @devoxx #usetheplatform`;
+
+                            const copy = (txt) => async () => {
+                                try {
+                                    await navigator.clipboard.writeText(txt);
+                                    console.log('copied');
+                                } catch (e) {
+                                    console.error(e, e.message);
+                                }
+                            };
+
+                            document
+                                .getElementById('demo1')
+                                .addEventListener('click', copy(tweet1));
+                            document
+                                .getElementById('demo2')
+                                .addEventListener('click', copy(tweet2));
+                            document
+                                .getElementById('demo3')
+                                .addEventListener('click', copy(tweet3));
+
+                            document
+                                .getElementById('demo-img')
+                                .addEventListener('click', async () => {
+                                    try {
+                                        const imgURL = '/assets/img/elmo.png';
+                                        const data = await fetch(imgURL);
+                                        const blob = await data.blob();
+                                        const item = new ClipboardItem(
+                                            Object.defineProperty(
+                                                {},
+                                                blob.type,
+                                                {
+                                                    value: blob,
+                                                    enumerable: true
+                                                }
+                                            )
+                                        );
+                                        await navigator.clipboard.write([item]);
+                                        console.log('Image copied.');
+                                    } catch (e) {
+                                        console.error(e, e.message);
+                                    }
+                                });
+                        </script>
+                    </deckgo-slide-split>
+
+                    <deckgo-slide-code
+                        src="assets/code-samples/app-gap/share-target-manifest.json"
+                    >
+                        <h1 slot="title">Manifest</h1>
+                    </deckgo-slide-code>
+
+                    <deckgo-slide-code
+                        src="assets/code-samples/app-gap/share-target-handling.js"
+                    >
+                        <h1 slot="title">Handling</h1>
+                    </deckgo-slide-code>
+
+                    <!-- #endregion Web Share Target -->
+
+                    <!-- #endregion Async Clipboard API -->
+
+                    <!-- #region Badging API -->
+
+                    <deckgo-slide-title class="topic-title-slide">
+                        <h1 slot="title">Badging API</h1>
+                    </deckgo-slide-title>
+
+                    <deckgo-slide-split>
+                        <h1 slot="title">Behavior</h1>
+                        <div slot="start" style="width: 100%;">
+                            <h2>Initial/Clear</h2>
+                            <img
+                                src="assets/img/app-gap/badge-clear.png"
+                                height="200px"
+                            />
+                        </div>
+                        <div slot="end" style="width: 100%;">
+                            <h2>Set</h2>
+                            <img
+                                src="assets/img/app-gap/badge.png"
+                                height="200px"
+                            />
                         </div>
                     </deckgo-slide-split>
+
+                    <deckgo-slide-code
+                        src="assets/code-samples/app-gap/badge-v1.js"
+                    >
+                        <h1 slot="title">API</h1>
+                    </deckgo-slide-code>
+
+                    <deckgo-slide-code
+                        src="assets/code-samples/app-gap/set-badge-v2.js"
+                    >
+                        <h1 slot="title">V2 - set</h1>
+                    </deckgo-slide-code>
+
+                    <deckgo-slide-code
+                        src="assets/code-samples/app-gap/clear-badge-v2.js"
+                    >
+                        <h1 slot="title">V2 - clear</h1>
+                    </deckgo-slide-code>
+
+                    <deckgo-slide-content>
+                        <h1 slot="title">⚠️ Support</h1>
+                        <ul slot="content" class="reveal-list">
+                            <deckgo-reveal>
+                                <li>Only available in Chrome</li>
+                                <li>
+                                    behind
+                                    <code
+                                        >#enable-experimental-web-platform-features</code
+                                    >
+                                </li>
+                                <li>on Windows & macOS</li>
+                            </deckgo-reveal>
+                        </ul>
+                    </deckgo-slide-content>
+
+                    <!-- #endregion Badging API -->
+
+                    <!-- #endregion app-gap -->
 
                     <!-- #endregion integrated -->
 
                     <!-- #region adaptive -->
-                    <deckgo-slide-title class="subtitle-slide">
+                    <deckgo-slide-title class="chapter-title-slide">
                         <h1 slot="title">An adaptive Web</h1>
                     </deckgo-slide-title>
 
@@ -1707,7 +1882,8 @@
                     >
                     </deckgo-slide-content>
 
-                    <deckgo-slide-content class="dark">
+                    <!-- #region Dark Mode -->
+                    <deckgo-slide-content class="topic-title-slide">
                         <div
                             slot="content"
                             style="width: 100%; text-align: center"
@@ -1812,10 +1988,14 @@ Right: the easier-on-the-eyes UA default
                         </div>
                     </deckgo-slide-content>
 
+                    <!-- #endregion Dark Mode -->
+
+                    <!-- #region Motion-->
+
                     <deckgo-slide-content
-                        style="--background:center no-repeat url('assets/img/stay-still.jpg') #000"
-                        class="bg-img"
+                        style="--background: center / contain no-repeat url('assets/img/stay-still.jpg') #fcc21b"
                     >
+                        <div slot="notes" show>motion</div>
                     </deckgo-slide-content>
 
                     <deckgo-slide-content>
@@ -1884,10 +2064,13 @@ Right: the easier-on-the-eyes UA default
                         <div slot="notes" show></div>
                     </deckgo-slide-content>
 
+                    <!-- #endregion Motion -->
+
                     <!-- #endregion adaptive -->
+
                     <!-- #region modular -->
 
-                    <deckgo-slide-title class="subtitle-slide">
+                    <deckgo-slide-title class="chapter-title-slide">
                         <h1 slot="title">A Modular Web</h1>
                     </deckgo-slide-title>
 
@@ -1911,6 +2094,8 @@ Right: the easier-on-the-eyes UA default
                     </deckgo-slide-content>
 
                     <!-- TODO: differential serving -->
+
+                    <!-- #region import-maps -->
 
                     <deckgo-slide-content>
                         <h1 slot="title">Bare specifiers</h1>
@@ -1967,6 +2152,24 @@ Right: the easier-on-the-eyes UA default
                         <div slot="notes">Chrome Status</div>
                     </deckgo-slide-content>
 
+                    <!-- #endregion import-maps -->
+
+                    <!-- #region built-in modules -->
+
+                    <deckgo-slide-content class="subchapter-title-slide">
+                        <h2 slot="title" style="text-align: center">
+                            built-in modules
+                        </h2>
+                        <div
+                            slot="content"
+                            style="width: 100%; text-align: center"
+                        >
+                            <img data-src="assets/img/pay-as-you-go.jpg" />
+                        </div>
+                        <!-- prettier-ignore -->
+                        <div slot="notes" show>BUILT-IN MODULES</div>
+                    </deckgo-slide-content>
+
                     <deckgo-slide-content>
                         <h1 slot="title">KV Storage</h1>
                         <div
@@ -1995,9 +2198,119 @@ Right: the easier-on-the-eyes UA default
                         <div slot="notes" show></div>
                     </deckgo-slide-content>
 
+                    <deckgo-slide-code
+                        src="assets/code-samples/import-maps/polyfil.html"
+                    >
+                        <h1 slot="title">Polyfill</h1>
+                    </deckgo-slide-code>
+
+                    <deckgo-slide-code
+                        src="assets/code-samples/import-maps/polyfil-import.html"
+                    >
+                        <h1 slot="title">Polyfill - Import</h1>
+                    </deckgo-slide-code>
+
+                    <!-- #endregion  built-in modules -->
+
+                    <!-- #region Web Components -->
+
+                    <deckgo-slide-content class="subchapter-title-slide">
+                        <figure slot="content" class="flex flex-center">
+                            <img
+                                src="assets/logos/wc.svg"
+                                alt="Web Components"
+                            />
+                            <deckgo-reveal>
+                                <figcaption>
+                                    Web Components
+                                </figcaption>
+                            </deckgo-reveal>
+                        </figure>
+                    </deckgo-slide-content>
+
+                    <deckgo-slide-content>
+                        <h1 slot="title" hidden>Custom Elements</h1>
+                        <figure slot="content" class="flex flex-center">
+                            <img
+                                data-src="assets/icons/web-components/custom-element.svg"
+                                alt="Custom Element"
+                            />
+                            <deckgo-reveal>
+                                <figcaption>
+                                    Custom Elements
+                                </figcaption>
+                            </deckgo-reveal>
+                        </figure>
+                        <!-- prettier-ignore -->
+                        <div slot="notes" show>CUSTOM ELEMENTS</div>
+                    </deckgo-slide-content>
+
+                    <deckgo-slide-content>
+                        <h1 slot="title" hidden>Shadow DOM</h1>
+                        <figure slot="content" class="flex flex-center">
+                            <img
+                                data-src="assets/icons/web-components/shadow-dom.svg"
+                                alt="Shadow DOM"
+                            />
+                            <deckgo-reveal>
+                                <figcaption>
+                                    Shadow DOM
+                                </figcaption>
+                            </deckgo-reveal>
+                        </figure>
+                        <!-- prettier-ignore -->
+                        <div slot="notes" show>SHADOW DOM</div>
+                    </deckgo-slide-content>
+
+                    <deckgo-slide-content>
+                        <h1 slot="title" hidden>ES Modules</h1>
+                        <figure slot="content" class="flex flex-center">
+                            <img
+                                data-src="assets/icons/web-components/es-module.svg"
+                                alt="ES Module"
+                            />
+                            <deckgo-reveal>
+                                <figcaption>
+                                    ES Modules
+                                </figcaption>
+                            </deckgo-reveal>
+                        </figure>
+                        <!-- prettier-ignore -->
+                        <div slot="notes" show>ES MODULES</div>
+                    </deckgo-slide-content>
+
+                    <deckgo-slide-content>
+                        <h1 slot="title" hidden>HTML Template</h1>
+                        <figure slot="content" class="flex flex-center">
+                            <img
+                                data-src="assets/icons/web-components/html-template.svg"
+                                alt="HTML Template"
+                            />
+                            <deckgo-reveal>
+                                <figcaption>
+                                    HTML Template
+                                </figcaption>
+                            </deckgo-reveal>
+                        </figure>
+                        <!-- prettier-ignore -->
+                        <div slot="notes" show>HTML TEMPLATE</div>
+                    </deckgo-slide-content>
+
+                    <deckgo-slide-content>
+                        <h1 slot="title">Browser Support</h1>
+                        <wc-browser-table
+                            slot="content"
+                            style="width: 100%; max-height: 100%;"
+                        ></wc-browser-table>
+                    </deckgo-slide-content>
+
+                    <!-- #endregion Web Components -->
+
+                    <!-- #region Built-in elements -->
+
                     <deckgo-slide-content>
                         <h2 slot="title" style="text-align: center">
-                            using built-in modules for new HTML elements
+                            built-in elements
                         </h2>
                         <div
                             slot="content"
@@ -2076,41 +2389,38 @@ new range of rendered children.
                     >
                     </deckgo-slide-code>
 
-                    <deckgo-slide-content>
-                        <h1 slot="title">Toast</h1>
-                        <div slot="content" style="height: 100%; width: 100%;">
-                            <deckgo-highlight-code
-                                src="assets/code-samples/toast/toast.mjs"
-                                highlight-lines="3,6"
-                            >
-                            </deckgo-highlight-code>
-
-                            <script
-                                type="module"
-                                src="assets/code-samples/toast/toast.mjs"
-                            ></script>
-
-                            <div
-                                class="demo"
-                                style="text-align: center; padding: 1em"
-                            >
-                                <ion-button id="show-toast" color="primary"
-                                    >show toast</ion-button
-                                >
-                            </div>
-                        </div>
-                    </deckgo-slide-content>
+                    <deckgo-slide-code
+                        src="assets/code-samples/toast/toast.mjs"
+                    >
+                        <h1 slot="title" id="show-toast">
+                            <ion-button color="primary" style="float:left"
+                                >show toast</ion-button
+                            >Toast
+                        </h1>
+                        <script
+                            type="module"
+                            src="assets/code-samples/toast/toast.mjs"
+                        ></script>
+                    </deckgo-slide-code>
 
                     <deckgo-slide-code
                         src="assets/code-samples/toast/toast.html"
                     >
                     </deckgo-slide-code>
 
+                    <!-- #endregion Built-in elements -->
+
                     <!-- #endregion modular -->
 
-                    <!-- #endregion news-->
+                    <!-- #endregion Future -->
 
                     <!-- #region outro -->
+
+                    <!-- #region Conclusion -->
+
+                    <deckgo-slide-title class="chapter-title-slide">
+                        <h1 slot="title">Conclusion</h1>
+                    </deckgo-slide-title>
 
                     <deckgo-slide-content>
                         <h1 slot="title">Let's "wrap" this up</h1>
@@ -2121,45 +2431,13 @@ new range of rendered children.
                         </div>
                     </deckgo-slide-content>
 
-                    <deckgo-slide-title class="title-slide">
+                    <!-- #endregion Conclusion -->
+
+                    <!-- #region Resources -->
+
+                    <deckgo-slide-title class="subchapter-title-slide">
                         <h1 slot="title">resources</h1>
                     </deckgo-slide-title>
-
-                    <deckgo-slide-author
-                        img-src="https://avatars3.githubusercontent.com/u/7578400"
-                    >
-                        <h1 slot="title">Noël Macé</h1>
-                        <div slot="author">
-                            <h2>Noël Macé</h2>
-                            <p>
-                                Independent Dev Advocado 🥑 for the Web Platform
-                            </p>
-                        </div>
-                        <div slot="social-link">
-                            <deckgo-social twitter="noel_mace"
-                                ><ion-icon
-                                    alt="Noël on Twitter"
-                                    slot="icon"
-                                    name="logo-twitter"
-                                    margin-start
-                                    margin-end
-                                ></ion-icon>
-                                @noel_mace</deckgo-social
-                            >
-                        </div>
-                        <div slot="social-link">
-                            <deckgo-social linkedin="noelmace/"
-                                ><ion-icon
-                                    alt="Noël on Linkedin"
-                                    slot="icon"
-                                    name="logo-linkedin"
-                                    margin-start
-                                    margin-end
-                                ></ion-icon>
-                                in/noelmace</deckgo-social
-                            >
-                        </div>
-                    </deckgo-slide-author>
 
                     <deckgo-slide-content>
                         <h2
@@ -2221,6 +2499,10 @@ new range of rendered children.
                         <div slot="notes" show></div>
                     </deckgo-slide-content>
 
+                    <!-- #endregion Resources -->
+
+                    <!-- #region end -->
+
                     <deckgo-slide-content
                         style="--background:center no-repeat url('assets/img/question.jpeg')"
                         class="bg-img"
@@ -2242,6 +2524,8 @@ new range of rendered children.
                             >
                         </div>
                     </deckgo-slide-qrcode>
+
+                    <!-- #endregion end -->
 
                     <!-- #endregion outro -->
 
@@ -2385,6 +2669,460 @@ new range of rendered children.
                 ></ion-icon>
             </web-social-share>
         </ion-app>
+
+        <template id="wc-browser-table">
+            <style>
+                a {
+                    text-decoration: none;
+                }
+                #container {
+                    display: flex;
+                    flex-direction: column;
+                    text-transform: uppercase;
+                    padding: 0 24px;
+                    color: var(--theme-blue-grey, #697785);
+                    font-size: 14px;
+                    width: calc(100% - 48px);
+                    max-width: 1080px;
+                    margin: 0 auto;
+                    border-radius: 4px;
+                    overflow: hidden;
+                    background: white;
+                    box-shadow: 0 1px 4px 0
+                            var(--shadow-color, hsla(0, 0%, 0%, 0.1)),
+                        0 0px 4px 0 var(--shadow-color, hsla(0, 0%, 0%, 0.1));
+                }
+                /* Header row */
+                .header {
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 1px solid #ededed;
+                }
+                .header .row [label] {
+                    display: none;
+                }
+                .header .row {
+                    flex: 1 0;
+                    border-bottom: none;
+                }
+                .header h1 {
+                    flex: 0 0 170px;
+                    text-transform: none;
+                    font-size: 24px;
+                    font-weight: normal;
+                    margin: 0 16px 0 0;
+                    color: var(--theme-black, #2d2f31);
+                }
+                .header img {
+                    width: 24px;
+                    margin-right: 8px;
+                }
+                /* Spec label */
+                div[label] {
+                    flex: 0 0 170px;
+                    margin-right: 16px;
+                    display: flex;
+                    align-items: center;
+                }
+                div[label] svg {
+                    width: 26px;
+                    margin-right: 8px;
+                    fill: var(--theme-blue-grey, #697785);
+                }
+                div[label]:after {
+                    content: attr(label);
+                    display: inline-block;
+                }
+                /* Browser row */
+                .row {
+                    display: flex;
+                    height: 100px;
+                    border-bottom: 1px solid #ededed;
+                    align-items: center;
+                }
+                .row > :not([label]) {
+                    flex: 1 1 60px;
+                    padding: 8px 0;
+                    font-weight: bold;
+                }
+                div.header > div.row > div:not([label]),
+                div.row [title] {
+                    display: flex;
+                    align-items: center;
+                    margin: 8px 0;
+                }
+                div:not(.header) > div.row [title]:before {
+                    content: '';
+                    width: 22px;
+                    height: 22px;
+                    flex: 0 0 22px;
+                    border-radius: 50%;
+                    display: inline-block;
+                    background-repeat: no-repeat;
+                    margin-right: 8px;
+                }
+                div:not(.header) > div.row > :not([title]):not([label]) {
+                    flex-direction: column;
+                }
+                [title='Stable']:before,
+                [title='Polyfill']:before {
+                    background: url('data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 22 22%27 version=%271.1%27 aria-hidden=%27true%27><path fill-rule=%27evenodd%27 fill=%27white%27 d=%27M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z%27></path></svg>'),
+                        #8edb69;
+                    background-position: 5px 3px;
+                }
+                [title='Developing']:before {
+                    background: url('data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 22 22%27 version=%271.1%27 aria-hidden=%27true%27><circle fill=%27white%27 cx=%2750%%27 cy=%2750%%27 r=%272%27></circle></svg>'),
+                        #f5a623;
+                }
+                [title='On hold']:before,
+                [title='Under consideration']:before {
+                    background: url('data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 22 22%27 version=%271.1%27 aria-hidden=%27true%27><circle fill=%27white%27 cx=%2750%%27 cy=%2750%%27 r=%272%27></circle></svg>'),
+                        #aaa;
+                }
+                [title='Stable']:after {
+                    color: hsla(101, 61%, 32%, 1);
+                    content: 'stable';
+                }
+                [title='Polyfill']:after {
+                    color: hsla(101, 61%, 32%, 1);
+                    content: 'Polyfill';
+                }
+                [title='On hold']:after {
+                    color: hsla(0, 0%, 46%, 1);
+                    content: 'on hold';
+                }
+                [title='Developing']:after {
+                    color: hsla(37, 91%, 34%, 1);
+                    content: 'Developing';
+                }
+                [title='Under consideration']:after {
+                    color: hsla(0, 0%, 46%, 1);
+                    content: 'Considering';
+                }
+                @media (max-width: 900px) {
+                    #container {
+                        margin: 0 24px;
+                        width: auto;
+                    }
+
+                    [title='Stable']:after,
+                    [title='Polyfill']:after,
+                    [title='On hold']:after,
+                    [title='Developing']:after,
+                    [title='Under consideration']:after {
+                        content: none !important;
+                    }
+                    .header span {
+                        display: none;
+                    }
+                }
+                @media (max-width: 500px) {
+                    .header {
+                        flex-direction: column;
+                    }
+                    .header h1 {
+                        margin-top: 24px;
+                        flex-basis: auto;
+                    }
+                    .header .row [label] {
+                        display: block;
+                    }
+                    .header .row {
+                        width: 100%;
+                    }
+                    .row :last-child {
+                        flex: 0 0 30px !important;
+                    }
+                    div[label] {
+                        flex: 1 0 40px !important;
+                    }
+                    div[label]:after {
+                        position: absolute;
+                        margin-top: -51px;
+                        padding-right: 8px;
+                        background: white;
+                    }
+                }
+            </style>
+
+            <div id="container" class="style-scope browser-table">
+                <div class="header style-scope browser-table">
+                    <h1 label="" class="style-scope browser-table"></h1>
+                    <div class="row style-scope browser-table">
+                        <div class="style-scope browser-table">
+                            <img
+                                src="/assets/logos/chrome.svg"
+                                class="style-scope browser-table"
+                            />
+                            <span class="style-scope browser-table"
+                                >Chrome</span
+                            >
+                        </div>
+                        <div class="style-scope browser-table">
+                            <img
+                                src="/assets/logos/opera-icon.svg"
+                                class="style-scope browser-table"
+                            />
+                            <span class="style-scope browser-table">Opera</span>
+                        </div>
+                        <div class="style-scope browser-table">
+                            <img
+                                src="/assets/logos/safari.svg"
+                                class="style-scope browser-table"
+                            />
+                            <span class="style-scope browser-table"
+                                >Safari</span
+                            >
+                        </div>
+                        <div class="style-scope browser-table">
+                            <img
+                                src="/assets/logos/firefox.svg"
+                                class="style-scope browser-table"
+                            />
+                            <span class="style-scope browser-table"
+                                >Firefox</span
+                            >
+                        </div>
+                        <div class="style-scope browser-table">
+                            <img
+                                src="/assets/logos/edge.svg"
+                                class="style-scope browser-table"
+                            />
+                            <span class="style-scope browser-table">Edge</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row style-scope browser-table">
+                    <a
+                        spec=""
+                        href="https://html.spec.whatwg.org/multipage/scripting.html#the-template-element"
+                        target="_blank"
+                        rel="noopener"
+                        class="style-scope browser-table"
+                    >
+                        <div
+                            label="HTML Templates"
+                            class="style-scope browser-table"
+                        >
+                            <svg
+                                viewBox="0 0 26 22"
+                                class="style-scope browser-table"
+                            >
+                                <use
+                                    xlink:href="/sprite.octicons.svg#template"
+                                    class="style-scope browser-table"
+                                ></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <a
+                        title="Stable"
+                        href="https://www.chromestatus.com/feature/5207287069147136"
+                        class="style-scope browser-table"
+                    ></a>
+                    <a
+                        title="Stable"
+                        href="https://www.chromestatus.com/feature/5207287069147136"
+                        class="style-scope browser-table"
+                    ></a>
+                    <a
+                        title="Stable"
+                        href="https://webkit.org/status/#feature-template-element"
+                        class="style-scope browser-table"
+                    ></a>
+                    <a
+                        title="Stable"
+                        href="https://platform-status.mozilla.org/#html-templates"
+                        class="style-scope browser-table"
+                    ></a>
+                    <a
+                        title="Stable"
+                        href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/templateelement/"
+                        class="style-scope browser-table"
+                    ></a>
+                </div>
+                <div class="row style-scope browser-table">
+                    <a
+                        spec=""
+                        href="https://html.spec.whatwg.org/multipage/custom-elements.html"
+                        target="_blank"
+                        rel="noopener"
+                        class="style-scope browser-table"
+                    >
+                        <div
+                            label="Custom Elements"
+                            class="style-scope browser-table"
+                        >
+                            <svg
+                                viewBox="0 0 26 22"
+                                class="style-scope browser-table"
+                            >
+                                <use
+                                    xlink:href="/sprite.octicons.svg#element"
+                                    class="style-scope browser-table"
+                                ></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <a
+                        title="Stable"
+                        href="https://www.chromestatus.com/feature/4696261944934400"
+                        class="style-scope browser-table"
+                    ></a>
+                    <a
+                        title="Stable"
+                        href="https://www.chromestatus.com/feature/4696261944934400"
+                        class="style-scope browser-table"
+                    ></a>
+                    <a
+                        title="Stable"
+                        href="https://webkit.org/status/#feature-custom-elements"
+                        class="style-scope browser-table"
+                    ></a>
+                    <a
+                        title="Stable"
+                        href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/63"
+                        class="style-scope browser-table"
+                    ></a>
+                    <a
+                        href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/customelements/"
+                        class="style-scope browser-table"
+                    >
+                        <div
+                            title="Polyfill"
+                            class="style-scope browser-table"
+                        ></div>
+                        <div
+                            title="Developing"
+                            class="style-scope browser-table"
+                        ></div>
+                    </a>
+                </div>
+                <div class="row style-scope browser-table">
+                    <a
+                        spec=""
+                        href="https://dom.spec.whatwg.org/#shadow-trees"
+                        target="_blank"
+                        rel="noopener"
+                        class="style-scope browser-table"
+                    >
+                        <div
+                            label="Shadow DOM"
+                            class="style-scope browser-table"
+                        >
+                            <svg
+                                viewBox="0 0 26 22"
+                                class="style-scope browser-table"
+                            >
+                                <use
+                                    xlink:href="/sprite.octicons.svg#shadow"
+                                    class="style-scope browser-table"
+                                ></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <a
+                        title="Stable"
+                        href="https://www.chromestatus.com/feature/4667415417847808"
+                        class="style-scope browser-table"
+                    ></a>
+                    <a
+                        title="Stable"
+                        href="https://www.chromestatus.com/feature/4667415417847808"
+                        class="style-scope browser-table"
+                    ></a>
+                    <a
+                        title="Stable"
+                        href="https://webkit.org/status/#feature-shadow-dom"
+                        class="style-scope browser-table"
+                    ></a>
+                    <a
+                        title="Stable"
+                        href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/63"
+                        class="style-scope browser-table"
+                    ></a>
+                    <a
+                        href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/shadowdom/"
+                        class="style-scope browser-table"
+                    >
+                        <div
+                            title="Polyfill"
+                            class="style-scope browser-table"
+                        ></div>
+                        <div
+                            title="Developing"
+                            class="style-scope browser-table"
+                        ></div>
+                    </a>
+                </div>
+                <div class="row style-scope browser-table">
+                    <a
+                        spec=""
+                        href="https://html.spec.whatwg.org/multipage/webappapis.html#integration-with-the-javascript-module-system"
+                        target="_blank"
+                        rel="noopener"
+                        class="style-scope browser-table"
+                    >
+                        <div
+                            label="ES Modules"
+                            class="style-scope browser-table"
+                        >
+                            <svg
+                                viewBox="0 0 26 22"
+                                class="style-scope browser-table"
+                            >
+                                <use
+                                    xlink:href="/sprite.octicons.svg#import"
+                                    class="style-scope browser-table"
+                                ></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <a
+                        title="Stable"
+                        href="https://www.chromestatus.com/feature/5365692190687232"
+                        class="style-scope browser-table"
+                    ></a>
+                    <a
+                        title="Stable"
+                        href="https://www.chromestatus.com/feature/5684934484164608"
+                        class="style-scope browser-table"
+                    ></a>
+                    <a
+                        title="Stable"
+                        href="https://webkit.org/status/#feature-modules"
+                        class="style-scope browser-table"
+                    ></a>
+                    <a
+                        title="Stable"
+                        href="https://platform-status.mozilla.org/#javascript-modules"
+                        class="style-scope browser-table"
+                    ></a>
+                    <a
+                        title="Stable"
+                        href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/moduleses6/"
+                        class="style-scope browser-table"
+                    ></a>
+                </div>
+            </div>
+        </template>
+
+        <script>
+            (function() {
+                var template = document.currentScript.ownerDocument.querySelector(
+                    'template#wc-browser-table'
+                );
+                var prototype = Object.create(HTMLElement.prototype);
+                prototype.createdCallback = function() {
+                    this.createShadowRoot().appendChild(
+                        document.importNode(template.content, true)
+                    );
+                };
+                document.registerElement('wc-browser-table', {
+                    prototype: prototype
+                });
+            })();
+        </script>
 
         <noscript>
             Please enable Javascript to access this presentation.

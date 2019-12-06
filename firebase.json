@@ -23,10 +23,6 @@
         {
             "target": "miniconf",
             "public": "dist"
-        },
-        {
-            "target": "poss19",
-            "public": "dist"
         }
     ]
 }

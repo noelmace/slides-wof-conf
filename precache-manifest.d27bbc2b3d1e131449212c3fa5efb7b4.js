@@ -1451,7 +1451,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "assets/logos/youtube.svg"
   },
   {
-    "revision": "e0a1f3af440c3c682a83887e30daaab6",
+    "revision": "4c2bf2ceacd4804bb81e11d01be5338e",
     "url": "index.html"
   },
   {
